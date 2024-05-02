@@ -1,7 +1,9 @@
 ENCODER_MAP_ENABLE = yes
-VIA_ENABLE = no
+GRAVE_ESC_ENABLE = yes
+TAP_DANCE_ENABLE = yes
 
 # Reduce compiled size
+VIA_ENABLE = no
 MOUSEKEY_ENABLE = no
 SPACE_CADET_ENABLE = no
-GRAVE_ESC_ENABLE = yes
+
