@@ -1,4 +1,21 @@
-# QMK Userspace
+# QMK Userspace - triplem
+
+This is my personal userspace repository for my keebs. 
+
+My keebs are 
+
+* redox - by falbatech (https://falbatech.click/)
+* sofle_choc - by keebart (https://keebart.com/)
+
+
+* https://pypi.org/project/keymap-drawer/
+
+The base-layout is EurKey (https://eurkey.steffen.bruentjen.eu/) which is available for gnome natively.
+
+Making use of home-row modifier as explaind on https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/ and https://docs.qmk.fm/#/mod_tap.
+
+
+
 
 This is a template repository which allows for an external set of QMK keymaps to be defined and compiled. This is useful for users who want to maintain their own keymaps without having to fork the main QMK repository.
 
