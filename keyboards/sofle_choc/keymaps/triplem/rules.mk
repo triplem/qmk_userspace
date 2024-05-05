@@ -1,6 +1,5 @@
 ENCODER_MAP_ENABLE = yes
 GRAVE_ESC_ENABLE = yes
-TAP_DANCE_ENABLE = yes
 
 # Reduce compiled size
 VIA_ENABLE = no

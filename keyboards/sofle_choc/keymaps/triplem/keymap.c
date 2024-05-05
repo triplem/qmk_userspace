@@ -15,23 +15,15 @@
  */
 #include QMK_KEYBOARD_H
 
-#include "keymap_us_international.h"
-#include "sendstring_us_international.h"
-
-enum tap_dances {
-    TD_UML_A,
-    TD_UML_O,
-    TD_UML_U,
-    TD_UML_S
-}
-
-
-tap_dance_action_t tap_dance_actions[] = {
-    [TD_UML_A] = ACTION_TAP_DANCE_DOUBLE(KC_A, US_ADIA),
-    [TD_UML_O] = ACTION_TAP_DANCE_DOUBLE(KC_O, US_ODIA),
-    [TD_UML_U] = ACTION_TAP_DANCE_DOUBLE(KC_U, US_UDIA),
-    [TD_UML_S] = ACTION_TAP_DANCE_DOUBLE(KC_S, US_SS),
-};
+// Home-Row Modifier
+#define MOD_A LGUI_T(KC_A)
+#define MOD_S LCTL_T(KC_S)
+#define MOD_D LALT_T(KC_D)
+#define MOD_F LSFT_T(KC_F)
+#define MOD_J RSFT_T(KC_J)
+#define MOD_K RALT_T(KC_K)
+#define MOD_L RCTL_T(KC_L)
+#define MOD_SCLN RGUI_T(KC_SEMICOLON)
 
 enum layers {
     _QWERTY,
@@ -47,20 +39,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
  * | Tab  |   Q  |   W  |   E  |   R  |   T  |                   |   Y  |   U  |   I  |   O  |   P  |  -   |
  * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
- * | Tab  |   A  |   S  |   D  |   F  |   G  |------.    ,-------|   H  |   J  |   K  |   L  |   ;  |  '   |
+ * |LShift|   A  |   S  |   D  |   F  |   G  |------.    ,-------|   H  |   J  |   K  |   L  |   ;  |  '   |
  * |------+------+------+------+------+------| HOME |    |  MUTE |------+------+------+------+------+------|
- * |LShift|   Z  |   X  |   C  |   V  |   B  |------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
+ * | LCTL |   Z  |   X  |   C  |   V  |   B  |------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
  * `-----------------------------------------/      /     \      \-----------------------------------------'
- *            | LCTL | LGUI | LALT | MO(1)| /Enter /       \Space \  | MO(2)|  DEL | MO(3)| RCTL |
+ *            | LCTL | LGUI | LALT | MO(1)| /Enter /       \Space \  | MO(2)|  DEL | RALT | RCTL |
  *            |      |      |      |      |/      /         \      \ |      |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
 [_QWERTY] = LAYOUT(
     QK_GESC,  KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,     KC_7,     KC_8,    KC_9,    KC_0,    KC_BSPC,
     KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,     KC_U,     KC_I,    KC_O,    KC_P,    KC_MINUS,
-    KC_TAB,   KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,     KC_J,     KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-    KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_HOME,  KC_MUTE, KC_N,     KC_M,  KC_COMM,    KC_DOT,  KC_SLSH, KC_RSFT,
-                KC_LCTL, KC_LGUI, KC_LALT, MO(1), KC_ENT,             KC_SPC, MO(2),  KC_DEL,  MO(3),    KC_RCTL
+    KC_LSFT,  MOD_A,  MOD_S,   MOD_D,   MOD_F,   KC_G,                     KC_H,    MOD_J,    MOD_K,   MOD_L,MOD_SCLN,    KC_QUOT,
+    KC_LCTL,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_HOME,  KC_MUTE, KC_N,     KC_M,  KC_COMM,    KC_DOT,  KC_SLSH, KC_RSFT,
+                KC_LCTL, KC_LGUI, KC_LALT, MO(1), KC_ENT,             KC_SPC, MO(2),  KC_DEL,  KC_RALT,    KC_RCTL
 ),
 
 /*
@@ -95,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | ---  | ---  | ---  | ---  | ---  | ---  |-------.    ,-------|  --- |  --- | ---  | ---  | ---  | ---  |
  * |------+------+------+------+------+------| ---   |    | ---   |------+------+------+------+------+------|
- * | ---  | ---  | ---  | ---  | ---  | ---  |-------|    |-------|  --- |  --- | ---  | ---  | ---  | ---  |
+ * | ---  | ---  | C-X  | C-C  | C-V  | ---  |-------|    |-------|  --- |  --- | ---  | ---  | ---  | ---  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | ---  | ---  | ---  | ---  | / ---   /       \ ---  \  | ---  | ---  | ---  | ---  |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
@@ -105,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, A(KC_F1), _______, _______, _______, _______,                       C(KC_F6), C(KC_PSLS), _______, _______, _______, _______,
     _______, _______,  _______, _______, _______, _______,                       _______,  _______,    _______, _______, _______, _______,
     _______, _______,  _______, _______, _______, _______,                       _______,  _______,    _______, _______, _______, _______,
-    _______, _______,  _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______, _______,
+    _______, _______,  C(KC_X), C(KC_C), C(KC_V), _______, _______,     _______, _______, _______, _______, _______, _______, _______,
                  _______, _______, _______, _______, _______,              _______, _______, _______, _______, _______
 )
 };
