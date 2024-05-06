@@ -17,15 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
-// Home-Row Modifier
-#define MOD_A LGUI_T(KC_A)
-#define MOD_S LCTL_T(KC_S)
-#define MOD_D LALT_T(KC_D)
-#define MOD_F LSFT_T(KC_F)
-#define MOD_J RSFT_T(KC_J)
-#define MOD_K RALT_T(KC_K)
-#define MOD_L RCTL_T(KC_L)
-#define MOD_SCLN RGUI_T(KC_SEMICOLON)
+#include "triplem.h"
 
 enum layers {
     _QWERTY,
@@ -47,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------'                             '------|------+------+------+------+------+------|
  * |LShift|   Z  |   X  |   C  |   V  |   B  |                                           |   N  |   M  |   ,  |   .  |   /  |RShift|
  * `-----------------------------------------'      .------------.   .------------.      '-----------------------------------------'
- *     | LCTL | LGUI | LALT | MO(1)|               /Enter /Enter /   \Space \Space \               | MO(2)|  DEL | MO(3)| RCTL |
+ *     | LCTL | LGUI | LALT | MO(1)|               /Enter /Enter /   \Space \Space \               | MO(2)|  DEL | MO(2)| RCTL |
  *     `---------------------------'   ,-----.    /------/------/     \------\------\    ,-----.   '---------------------------'
  *                                     |     |   /Enter /Enter /       \Space \Space \   |     |
  *                                     `-----'  /      /      /         \      \      \  `-----'
@@ -65,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_ENT  ,KC_ENT  ,        KC_SPC  ,KC_SPC  ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     KC_LCTL ,KC_LGUI ,KC_LALT ,MO(1)   ,     _______ ,    KC_ENT  ,KC_ENT  ,        KC_SPC  ,KC_SPC  ,    _______ ,     MO(2)   ,KC_DEL  ,MO(3)   ,KC_RCTL 
+     KC_LCTL ,KC_LGUI ,KC_LALT ,MO(1)   ,     _______ ,    KC_ENT  ,KC_ENT  ,        KC_SPC  ,KC_SPC  ,    _______ ,     MO(2)   ,KC_DEL  ,MO(2)   ,KC_RCTL 
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
