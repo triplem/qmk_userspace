@@ -10,10 +10,18 @@ My keebs are
 
 * https://pypi.org/project/keymap-drawer/
 
+Install python-pipx and then using pipx install keymap-drawer like described on their page.
+
 The base-layout is EurKey (https://eurkey.steffen.bruentjen.eu/) which is available for gnome natively.
 
 Making use of home-row modifier as explaind on https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/ and https://docs.qmk.fm/#/mod_tap.
+https://precondition.github.io/home-row-mods
 
+
+```
+qmk c2json -kb redox -km triplem ~/qmk_userspace/keyboards/redox/keymaps/triplem/keymap.c | keymap parse -c 10 -q - -l QWERTY FUNCTION CODING >redox_keymap.yaml
+keymap draw redox_keymap.yaml >redox_keymap.ortho.svg
+```
 
 
 

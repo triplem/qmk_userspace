@@ -15,21 +15,7 @@
  */
 #include QMK_KEYBOARD_H
 
-// Home-Row Modifier
-#define MOD_A LGUI_T(KC_A)
-#define MOD_S LCTL_T(KC_S)
-#define MOD_D LALT_T(KC_D)
-#define MOD_F LSFT_T(KC_F)
-#define MOD_J RSFT_T(KC_J)
-#define MOD_K RALT_T(KC_K)
-#define MOD_L RCTL_T(KC_L)
-#define MOD_SCLN RGUI_T(KC_SEMICOLON)
-
-enum layers {
-    _QWERTY,
-    _FUNCTION,
-    _CODING
-};
+#include "triplem.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
