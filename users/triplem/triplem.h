@@ -11,6 +11,10 @@
 #define MOD_L RALT_T(KC_L)
 #define MOD_SCLN RGUI_T(KC_SEMICOLON)
 
+// Shortcuts
+#define SC_CAD	LALT(LCTL(KC_DEL))
+
+
 enum layers {
     _QWERTY,
     _FUNCTION,
