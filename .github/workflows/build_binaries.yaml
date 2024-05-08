@@ -17,9 +17,9 @@ jobs:
 #    name: 'QMK Userspace Publish'
 #    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
 #    if: always() && !cancelled()
-#    needs: build
     name: 'QMK Userspace Publish'
     if: always() && !cancelled()
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
