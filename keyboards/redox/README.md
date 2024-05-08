@@ -10,3 +10,4 @@ start and unplug the keyboard (one half)
 ❯ qmk flash -kb redox -km triplem  
 , press ESC or BKSP and replug
 flashing will start
+
