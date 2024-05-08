@@ -28,8 +28,6 @@
 #define SPLIT_TRANSPORT_MIRROR             // If LED_MATRIX_KEYPRESSES or LED_MATRIX_KEYRELEASES is enabled, you also will want to enable SPLIT_TRANSPORT_MIRROR
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 100  // limits maximum brightness of LEDs (max 255). Higher may cause the controller to crash.
 
-// Home Row Modifer Settings
-#define QUICK_TAP_TERM 0
-
-// RGB Default 
-#define RGB_MATRIX_DEFAULT_MODE RGBLIGHT_MODE_TWINKLE
+// Enable Framebuffer specific effects
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_KEYRELEASES
