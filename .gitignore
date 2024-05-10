@@ -9,3 +9,7 @@
 *.hex
 *.bin
 *.uf2
+
+# keyboard drawer files
+*.svg
+*_keymap.yaml
