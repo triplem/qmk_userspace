@@ -8,6 +8,6 @@ https://getreuer.info/posts/keyboards/non-english/index.html#us-international-la
 twice - once for each side
 start and unplug the keyboard (one half)
 ❯ qmk flash -kb redox -km triplem  
-, press ESC or BKSP and replug
+, press Reset-Button and replug
 flashing will start
 
