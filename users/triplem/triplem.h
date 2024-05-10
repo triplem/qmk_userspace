@@ -25,6 +25,6 @@ enum layers {
 
 //Tap Dance Declarations
 enum {
-  TD_F1_F11,
+  TD_F1_F11 = 0,
   TD_F2_F12
 };
