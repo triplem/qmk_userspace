@@ -32,6 +32,8 @@ https://getreuer.info/posts/keyboards/non-english/index.html#us-international-la
 * you can install qmk inside an ubuntu-24.04 (20.04 has an old python version) and compile the firmware, to flash it, use the qmk-toolbox (https://qmk.fm/toolbox)
 
 
+# Template
+
 This is a template repository which allows for an external set of QMK keymaps to be defined and compiled. This is useful for users who want to maintain their own keymaps without having to fork the main QMK repository.
 
 ## Howto configure your build targets
