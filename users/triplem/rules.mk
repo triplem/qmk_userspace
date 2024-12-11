@@ -1,4 +1,4 @@
-SRC += triplem.c
+INTROSPECTION_KEYMAP_C += triplem.c
 
 GRAVE_ESC_ENABLE = yes
 SPACE_CADET_ENABLE = yes

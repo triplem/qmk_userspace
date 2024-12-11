@@ -25,6 +25,12 @@ keymap draw redox_keymap.yaml >redox_keymap.ortho.svg
 https://github.com/rafaelromao/keyboards
 https://getreuer.info/posts/keyboards/non-english/index.html#us-international-layout
 
+## Build Instructions
+
+* on linux it is quite easy, just install qmk and compile and flash the firmware
+* on windows, there is an msys package, which is quite slow
+* you can install qmk inside an ubuntu-24.04 (20.04 has an old python version) and compile the firmware, to flash it, use the qmk-toolbox (https://qmk.fm/toolbox)
+
 
 This is a template repository which allows for an external set of QMK keymaps to be defined and compiled. This is useful for users who want to maintain their own keymaps without having to fork the main QMK repository.
 
