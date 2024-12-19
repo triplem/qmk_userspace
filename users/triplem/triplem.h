@@ -14,13 +14,19 @@
 #define MOD_SCLN RGUI_T(KC_SEMICOLON)
 
 // Shortcuts
-#define SC_CAD	LALT(LCTL(KC_DEL))
+#define SC_CAD	LALT(LCTL(KC_DEL)) // alt-ctrl-del - reset
 
 // Layers
 enum layers {
-    _QWERTY,
-    _FUNCTION,
-    _CODING
+  _QWERTY,
+  _FUNCTION,
+  _CODING
+};
+
+// New Keycodes
+enum custom_keycodes {
+  SC_VIM_PASTE = SAFE_RANGE, // paste in vim from system clipboard
+  SC_VIM_YANK,               // yank/ copy in vim to system clipboard
 };
 
 //Tap Dance Declarations
@@ -28,3 +34,4 @@ enum {
   TD_F1_F11 = 0,
   TD_F2_F12
 };
+

@@ -30,6 +30,7 @@ https://getreuer.info/posts/keyboards/non-english/index.html#us-international-la
 * on linux it is quite easy, just install qmk and compile and flash the firmware
 * on windows, there is an msys package, which is quite slow
 * you can install qmk inside an ubuntu-24.04 (20.04 has an old python version) and compile the firmware, to flash it, use the qmk-toolbox (https://qmk.fm/toolbox)
+* wsl -d Ubuntu-24.04
 
 
 # Template
