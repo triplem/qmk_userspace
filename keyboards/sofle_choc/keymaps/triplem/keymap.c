@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
  * | Tab  |   Q  |   W  |   E  |   R  |   T  |                   |   Y  |   U  |   I  |   O  |   P  |  -   |
  * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
- * |LShift|   A  |   S  |   D  |   F  |   G  |------.    ,-------|   H  |   J  |   K  |   L  |   ;  |  '   |
+ * |LShift|A GUI |S ALT |D CTL |F SFT |G MO1 |------.    ,-------|H MO2 |J SFT |K CTL |L ALT |; GUI |  '   |
  * |------+------+------+------+------+------| HOME |    |  MUTE |------+------+------+------+------+------|
  * |LShift|   Z  |   X  |   C  |   V  |   B  |------|    |-------|   N  |   M  |   ,  |   .  |   /  |RShift|
  * `-----------------------------------------/      /     \      \-----------------------------------------'
@@ -37,8 +37,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT(
     QK_GESC,  KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,     KC_7,     KC_8,    KC_9,    KC_0,    KC_BSPC,
     KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,     KC_U,     KC_I,    KC_O,    KC_P,    KC_MINUS,
-    SC_LSPO,  MOD_A,  MOD_S,   MOD_D,   MOD_F,   LT_G,                     LT_H,    MOD_J,    MOD_K,   MOD_L,MOD_SCLN,    KC_QUOT,
-    SC_LSPO,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_HOME,  KC_MUTE, KC_N,     KC_M,  KC_COMM,    KC_DOT,  KC_SLSH, SC_RSPC,
+    KC_LSFT,  MOD_A,  MOD_S,   MOD_D,   MOD_F,   LT_G,                     LT_H,    MOD_J,    MOD_K,   MOD_L,MOD_SCLN,    KC_QUOT,
+    KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,  KC_HOME,  KC_MUTE, KC_N,     KC_M,  KC_COMM,    KC_DOT,  KC_SLSH, KC_RSFT,
                 KC_LCTL, KC_LGUI, KC_LALT, MO(1), KC_ENT,             KC_SPC, MO(2),  KC_DEL,  KC_RALT,    KC_RCTL
 ),
 
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_CODING] = LAYOUT(
     _______, A(KC_F1), _______, _______, _______, _______,                       C(KC_F6), C(KC_PSLS), _______, _______, _______, _______,
-    _______, _______,  _______, _______, _______, _______,                       SC_VIM_YANK, _______, _______, _______, SC_VIM_PASTE, _______,
+    _______, _______,  _______, _______, _______, _______,                       _______, _______, _______, _______, _______, _______,
     _______, _______,  _______, _______, _______, _______,                       _______,  _______,    _______, _______, _______, _______,
     _______, _______,  C(KC_X), C(KC_C), C(KC_V), _______, _______,     _______, _______, _______, _______, _______, _______, _______,
                  _______, _______, _______, _______, _______,              _______, _______, _______, _______, _______

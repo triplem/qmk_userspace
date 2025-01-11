@@ -17,7 +17,7 @@ Compile the qmk-firmware:
 The firmware needs to get flashed twice, once for each side. Unplug the Keyboard and start the Flash-Process:
 
 ```
-❯ qmk flash -kb sofle_choc -km triplem  
+❯ qmk flash -kb sofle_choc -km triplem
 ```
 
 While replugging the corresponding side, press ESC (for the left side) or BKSP (for the right side). The Flashing should start.
