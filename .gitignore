@@ -13,3 +13,8 @@
 # keyboard drawer files
 *.svg
 *_keymap.yaml
+
+# clangd
+compile_commands.json
+.clangd/
+.cache/
