@@ -14,35 +14,7 @@ jobs:
       qmk_ref: master
 
   publish:
-#    name: 'QMK Userspace Publish'
-#    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
-#    if: always() && !cancelled()
     name: 'QMK Userspace Publish'
+    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
     if: always() && !cancelled()
     needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download binaries
-        if: always() && !cancelled()
-        uses: actions/download-artifact@v3
-
-      - name: Generate release tag
-        id: tag
-        run: |
-          echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
-
-      - name: Generate Release
-        uses: softprops/action-gh-release@v1
-        if: always() && !cancelled()
-        with:
-          token: ${{ github.token }}
-          name: ${{ steps.tag.outputs.release_tag }} - triplem's QMK Firmware
-          tag_name: ${{ steps.tag.outputs.release_tag }}
-          fail_on_unmatched_files: false
-          draft: false
-          prerelease: false
-          files: |
-            **/*.hex
-            **/*.bin
-            **/*.uf2
