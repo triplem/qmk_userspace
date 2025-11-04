@@ -1,7 +1,7 @@
 INTROSPECTION_KEYMAP_C += triplem.c
 
 GRAVE_ESC_ENABLE = yes
-SPACE_CADET_ENABLE = yes
+SPACE_CADET_ENABLE = no
 TAP_DANCE_ENABLE = yes
 
 # Reduce compiled size
