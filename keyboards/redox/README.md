@@ -8,7 +8,7 @@ https://getreuer.info/posts/keyboards/non-english/index.html#us-international-la
 twice - once for each side
 start and repeat for each half:
 unplug connection cord between the two halfs
-❯ qmk flash -kb redox -km triplem  
+❯ qmk flash -kb redox/rev1/base -km triplem  
 , press Reset-Button twice shortly after each other
 flashing will start
 after finished flashing on both sided, unplug usb again, reconnect the two halfs

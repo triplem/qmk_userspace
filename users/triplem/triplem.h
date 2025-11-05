@@ -34,6 +34,11 @@ enum layers {
 enum {
   TD_F1_F11 = 0,
   TD_F2_F12,
+  TD_ESC_GRV,
+  TD_UML_AE,
+  TD_UML_OE,
+  TD_UML_UE,
+  TD_SS,
   MC_QUOT,
   MC_GRV
 };

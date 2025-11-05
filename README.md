@@ -18,7 +18,7 @@ https://precondition.github.io/home-row-mods
 
 
 ```
-qmk c2json -kb redox -km triplem ~/qmk_userspace/keyboards/redox/keymaps/triplem/keymap.c | keymap parse -c 10 -q - -l QWERTY FUNCTION CODING >redox_keymap.yaml
+qmk c2json -kb redox/rev1/base -km triplem ~/qmk_userspace/keyboards/redox/keymaps/triplem/keymap.c | keymap parse -c 10 -q - -l QWERTY FUNCTION CODING >redox_keymap.yaml
 keymap draw redox_keymap.yaml >redox_keymap.ortho.svg
 ```
 
