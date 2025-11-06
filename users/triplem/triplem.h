@@ -39,6 +39,7 @@ enum {
   TD_UML_OE,
   TD_UML_UE,
   TD_SS,
+  TD_EU_EUR,
   MC_QUOT,
   MC_GRV
 };
