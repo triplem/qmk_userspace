@@ -11,10 +11,11 @@ My keebs are
 
 Install python-pipx and then using pipx install keymap-drawer like described on their page.
 
-The base-layout is EurKey (https://eurkey.steffen.bruentjen.eu/) which is available for gnome natively.
+The base-layout is US Intl., since (https://eurkey.steffen.bruentjen.eu/) is not nativly in Win and not installable on non-admin machines and in WSL. Since I do not like
+Deadkeys, the layout is adopted to be able to use Umlauts as well as quotes without deadkeys, even on US Intl. ;-)
 
 Making use of home-row modifier as explaind on https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/ and https://docs.qmk.fm/#/mod_tap.
-https://precondition.github.io/home-row-mods
+https://precondition.github.io/home-row-mods. Note, that the home-row mod is not working on "s" anymore, since this is now a Tap-Dance. 
 
 
 ```
