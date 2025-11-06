@@ -4,6 +4,8 @@ GRAVE_ESC_ENABLE = no
 SPACE_CADET_ENABLE = no
 TAP_DANCE_ENABLE = yes
 
+KEY_OVERRIDE_ENABLE = yes
+
 # Reduce compiled size
 VIA_ENABLE = no
 MOUSEKEY_ENABLE = no

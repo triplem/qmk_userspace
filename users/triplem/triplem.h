@@ -1,8 +1,10 @@
 #pragma once
 
+#include "quantum.h"
+
 // Home-Row Modifier
 #define MOD_A LGUI_T(KC_A)
-#define MOD_S LALT_T(KC_S)
+// #define MOD_S LALT_T(KC_S)
 #define MOD_D LCTL_T(KC_D)
 #define MOD_F LSFT_T(KC_F)
 #define LT_G LT(_CODING, KC_G)
@@ -47,3 +49,7 @@ enum custom_keycodes {
     MC_QUOT = SAFE_RANGE,
     MC_GRV
 };
+
+// overrides
+extern const key_override_t tilde_esc_override;
+extern const key_override_t grave_esc_override;
