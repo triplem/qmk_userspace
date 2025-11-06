@@ -49,7 +49,3 @@ enum custom_keycodes {
     MC_QUOT = SAFE_RANGE,
     MC_GRV
 };
-
-// overrides
-extern const key_override_t tilde_esc_override;
-extern const key_override_t grave_esc_override;
