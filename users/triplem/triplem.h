@@ -45,7 +45,14 @@ enum {
 };
 
 // Custom Keycodes to avoid dead-keys
+// MC_QUOT = " to avoid dead keys
+// MC_GRV = Shift + esc = ~
+// MC_GRV + esc = `
+// MC_AGD = Macro for Emacs org-agenda (Space o A T)
+// MC_QUT = Macro to quit doom emacs
 enum custom_keycodes {
     MC_QUOT = SAFE_RANGE,
-    MC_GRV
+    MC_GRV,
+    MC_AGD,
+    MC_QUT
 };

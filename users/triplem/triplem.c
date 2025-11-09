@@ -46,18 +46,16 @@ tap_dance_action_t tap_dance_actions[] = {
   [TD_EU_EUR]  = ACTION_TAP_DANCE_FN(eur_tap_dance)
 };
 
-// Shift + esc = ~
-// GUI + esc = `
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case MC_QUOT:
-        if (record->event.pressed) {
-            SEND_STRING(SS_TAP(X_QUOT) SS_TAP(X_SPC));
-        }
-        break;
+       if (record->event.pressed) {
+           SEND_STRING(SS_TAP(X_QUOT) SS_TAP(X_SPC));
+       }
+       break;
 
     case MC_GRV:
-        if (record->event.pressed) {
+       if (record->event.pressed) {
             if (((get_mods() & MOD_MASK_SHIFT) != 0)) {
                 register_code(KC_LSFT);
                 tap_code(KC_GRV);
@@ -65,8 +63,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             } else if (((get_mods() & MOD_MASK_GUI) != 0)) {
                 SEND_STRING(SS_TAP(X_GRV) SS_TAP(X_SPC));
             }
-        }
+       }
        break;
+
+    case MC_AGD: // show org-agenda Today view in emacs
+      if (record->event.pressed) {
+        SEND_STRING(SS_TAP(X_SPC) "oAT");
+      }
+      break;
+      
+    case MC_QUT: // evil-quit doom emacs
+       if (record->event.pressed) {
+        SEND_STRING(SS_TAP(X_SPC) "w" SS_LCTL("q"));
+      }
     }
+
     return true;
 };
