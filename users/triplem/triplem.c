@@ -2,38 +2,64 @@
 
 //Tap Dance Definitions
 void auml_tap_dance(tap_dance_state_t *state, void *user_data) {
-  if (state->count >= 3) {
-    register_code16(UML_AE);
-    reset_tap_dance(state);     
-  }
+    if (state->count == 1) {
+        tap_code(KC_A);
+    } else if (state->count == 2) {
+        tap_code(KC_A);
+    } else if (state->count == 3) {
+        tap_code16(UML_AE);
+    } else {
+        reset_tap_dance(state);
+    }
 };
 
 void ouml_tap_dance(tap_dance_state_t *state, void *user_data) {
-  if (state->count >= 3) {
-    register_code16(UML_OE);
-    reset_tap_dance(state);     
-  }
+    if (state->count == 1) {
+        tap_code(KC_O);
+    } else if (state->count == 2) {
+        tap_code(KC_O);
+    } else if (state->count == 3) {
+        tap_code16(UML_OE);
+    } else {
+        reset_tap_dance(state);
+    }
 };
 
 void uuml_tap_dance(tap_dance_state_t *state, void *user_data) {
-  if (state->count >= 3) {
-    register_code16(UML_UE);
-    reset_tap_dance(state);     
-  }
+    if (state->count == 1) {
+        tap_code(KC_U);
+    } else if (state->count == 2) {
+        tap_code(KC_U);
+    } else if (state->count == 3) {
+        tap_code16(UML_UE);
+    } else {
+        reset_tap_dance(state);
+    }
+
 };
 
 void ger_sz_tap_dance(tap_dance_state_t *state, void *user_data) {
-  if (state->count >= 3) {
-    register_code16(GER_SZ);
-    reset_tap_dance(state);     
-  }
+    if (state->count == 1) {
+        tap_code(KC_S);
+    } else if (state->count == 2) {
+        tap_code(KC_S);
+    } else if (state->count == 3) {
+        tap_code16(GER_SZ);
+    } else {
+        reset_tap_dance(state);
+    }
 };
 
 void eur_tap_dance(tap_dance_state_t *state, void *user_data) {
-  if (state->count >= 3) {
-    register_code16(EU_EUR);
-    reset_tap_dance(state);     
-  }
+    if (state->count == 1) {
+        tap_code(KC_E);
+    } else if (state->count == 2) {
+        tap_code(KC_E);
+    } else if (state->count == 3) {
+        tap_code16(EU_EUR);
+    } else {
+        reset_tap_dance(state);
+    }
 };
 
 tap_dance_action_t tap_dance_actions[] = {
@@ -71,7 +97,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         SEND_STRING(SS_TAP(X_SPC) "oAT");
       }
       break;
-      
+
     case MC_QUT: // evil-quit doom emacs
        if (record->event.pressed) {
         SEND_STRING(SS_TAP(X_SPC) "w" SS_LCTL("q"));
