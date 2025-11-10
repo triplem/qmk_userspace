@@ -29,7 +29,7 @@
 enum layers { _QWERTY, _FUNCTION, _CODING };
 
 // Tap Dance Declarations
-enum { TD_F1_F11 = 0, TD_F2_F12, TD_ESC_GRV, TD_UML_AE, TD_UML_OE, TD_UML_UE, TD_SS, TD_EU_EUR };
+enum { TD_F1_F11 = 0, TD_F2_F12, TD_ESC_GRV, TD_UML_AE, TD_UML_OE, TD_UML_UE, TD_GER_SZ, TD_EU_EUR };
 
 // Custom Keycodes to avoid dead-keys
 // MC_QUOT = " to avoid dead keys

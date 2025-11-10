@@ -1,455 +1,187 @@
-[
-  {
-    "name": "Sofle Choc",
-    "author": "Brian Low",
-    "notes": "Usual Key - Shifted (if required) - AltGr\nGUI - Layer: _CODING\nLayer: _FUNCTION - Layer _FUNCTION + Double Tab"
-  },
-  [
-    {
-      "y": 0.2,
-      "x": 3,
-      "c": "#e8e7e3"
-    },
-    "3\nF3\n\n\n\n\n\n\n#",
-    {
-      "x": 7,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    "8\nF8\n\n\n\n\n\n\n*"
-  ],
-  [
-    {
-      "y": -0.95,
-      "x": 10,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "7\nF7\n\n\n\n\n\n\n&\nCtrl-/"
-  ],
-  [
-    {
-      "y": -0.9,
-      "x": 2,
-      "fa": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "2\nF2\n\n\n\n\n\n\n@\n\nF12",
-    {
-      "x": 1,
-      "f2": 0
-    },
-    "4\nF4\n\n\n\n\n\n\n$",
-    {
-      "x": 7
-    },
-    "9\nF9\n\n\n\n\n\n\n("
-  ],
-  [
-    {
-      "y": -0.85,
-      "fa": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    "ESC\n\n\n\n\n\n`\n\n~",
-    {
-      "fa": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "1\nF1\n\n\n\n\n\n\n!\nA-F1\nF11",
-    {
-      "x": 3,
-      "fa": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    "5\nF5\n€\n\n\n\n\n\n%",
-    {
-      "x": 3,
-      "fa": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        1
-      ]
-    },
-    "6\nF6\n\n\n\n\n\n\n^\nCtrl-F6",
-    {
-      "x": 3,
-      "f": 3
-    },
-    "0\nF10\n\n\n\n\n\n\n)",
-    {
-      "f": 3
-    },
-    "Bspc\n=\n\n\n\n\n\n\n`"
-  ],
-  [
-    {
-      "y": -0.30000000000000004,
-      "x": 3
-    },
-    "E",
-    {
-      "x": 7,
-      "a": 7
-    },
-    "I"
-  ],
-  [
-    {
-      "y": -0.95,
-      "x": 10,
-      "a": 4,
-      "f": 3
-    },
-    "U\n\nÜ"
-  ],
-  [
-    {
-      "y": -0.8999999999999999,
-      "x": 2
-    },
-    "W",
-    {
-      "x": 1
-    },
-    "R",
-    {
-      "x": 7,
-      "f": 3
-    },
-    "O\n\nÖ"
-  ],
-  [
-    {
-      "y": -0.8500000000000001,
-      "f2": 1
-    },
-    "Tab\nRGB On/Off",
-    "Q",
-    {
-      "x": 3,
-      "f": 3
-    },
-    "R\n[",
-    {
-      "c": "#cccccc",
-      "a": 7,
-      "f": 6,
-      "w": 3,
-      "h": 2.75,
-      "d": true
-    },
-    "",
-    {
-      "c": "#e8e7e3",
-      "a": 4,
-      "f": 3
-    },
-    "Y",
-    {
-      "x": 3
-    },
-    "P",
-    {
-      "f": 6
-    },
-    "-"
-  ],
-  [
-    {
-      "y": -0.2999999999999998,
-      "x": 3,
-      "f": 3
-    },
-    "D\n\n\n\nCtrl",
-    {
-      "x": 7
-    },
-    "\n<i class='kb kb-Arrows-Up'></i>\n\n\nCtrl\n\n\n\n\nK"
-  ],
-  [
-    {
-      "y": -0.8500000000000001,
-      "x": 2
-    },
-    "S\n\nß\n\nAlt",
-    {
-      "x": 1,
-      "n": true
-    },
-    "F\n\n\n\nShift",
-    {
-      "x": 5,
-      "n": true
-    },
-    "J\n<i class='kb kb-Arrows-Down'></i>\n\n\nShift",
-    {
-      "x": 1
-    },
-    "\n<i class='kb kb-Arrows-Right'></i>\n\n\nAltGr\n\n\n\n\nL"
-  ],
-  [
-    {
-      "y": -0.8500000000000001,
-      "t": "#0d0d0b",
-      "sm": "cherry",
-      "f": 6,
-      "fa": [
-        1,
-        1
-      ]
-    },
-    "(\nRGB Mod\n\n\nShift",
-    {
-      "t": "#000000",
-      "f": 3
-    },
-    "A\n\nÄ\n\nOS",
-    {
-      "x": 3
-    },
-    "G\n\n\n\n_FUNC",
-    {
-      "x": 3
-    },
-    "H\n<i class='kb kb-Arrows-Left'></i>\n\n\n_CODI",
-    {
-      "x": 3
-    },
-    ";\n\\\n\n\nOS\n\n\n\n:",
-    {
-      "t": "#0d0d0b",
-      "f": 6
-    },
-    "'"
-  ],
-  [
-    {
-      "y": -0.2999999999999998,
-      "x": 3,
-      "t": "#000000",
-      "f": 3,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    "C\n\n\n\n\n\n\n\n\nCtrl-C",
-    {
-      "x": 7,
-      "f2": 1
-    },
-    ",\nPgUp\n\n\n\n\n\n\n<"
-  ],
-  [
-    {
-      "y": -0.8500000000000001,
-      "x": 2
-    },
-    "X\n\n\n\n\n\n\n\n\nCtrl-X",
-    {
-      "x": 1
-    },
-    "V\n\n\n\n\n\n\n\n\nCtrl-V",
-    {
-      "x": 5
-    },
-    "M\nPgDwn",
-    {
-      "x": 1,
-      "f2": 1
-    },
-    ".\nEnd\n\n\n\n\n\n\n>"
-  ],
-  [
-    {
-      "y": -0.8500000000000001,
-      "sm": "alps",
-      "f": 5,
-      "f2": 1
-    },
-    "\nRGB RMod\n\n\nCtrl",
-    {
-      "f": 3
-    },
-    "Z",
-    {
-      "x": 3
-    },
-    "B",
-    {
-      "x": 3,
-      "f2": 1
-    },
-    "N\nHome",
-    {
-      "x": 3,
-      "f2": 1
-    },
-    "/\n\n\n\n\n\n\n\n?",
-    {
-      "f": 5,
-      "f2": 1
-    },
-    ")\nCtrl-Alt-Entf\n\n\nShift"
-  ],
-  [
-    {
-      "y": -0.2999999999999998,
-      "x": 3,
-      "a": 7,
-      "f": 9
-    },
-    "\n\n\n\nOS"
-  ],
-  [
-    {
-      "y": -0.8500000000000005,
-      "x": 2
-    },
-    "\n\n\n\nCtrl",
-    {
-      "x": 1
-    },
-    "\n\n\n\nAlt",
-    {
-      "x": 5,
-      "a": 4,
-      "f": 3
-    },
-    "DEL"
-  ],
-  [
-    {
-      "rx": 0.25,
-      "y": 4.2,
-      "x": 10.75,
-      "a": 7,
-      "f": 9
-    },
-    "\n\n\n\nStrgAlt"
-  ],
-  [
-    {
-      "rx": 0.5,
-      "y": 4.35,
-      "x": 11.5
-    },
-    "\n\n\n\nCtrl"
-  ],
-  [
-    {
-      "r": 15,
-      "rx": 0.75,
-      "y": 3.15,
-      "x": 5.5
-    },
-    "\n\n\n\n_FUNC"
-  ],
-  [
-    {
-      "r": 30,
-      "rx": 0,
-      "y": 0.5,
-      "x": 7.95,
-      "fa": [
-        4
-      ],
-      "h": 1.5
-    },
-    "Enter"
-  ],
-  [
-    {
-      "r": -30,
-      "y": 6.45,
-      "x": 4,
-      "f": 3,
-      "h": 1.5
-    },
-    "Space"
-  ],
-  [
-    {
-      "r": -15,
-      "y": -2.0999999999999996,
-      "x": 7.25,
-      "f": 9
-    },
-    "\n\n\n\n_CODI"
-  ]
-]
+layout: {qmk_keyboard: sofle_choc, layout_name: LAYOUT}
+layers:
+  QWERTY:
+  - '`'
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: '$'}
+  - {t: '5', s: '%'}
+  - {t: '6', s: '^'}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: '('}
+  - {t: '0', s: ')'}
+  - BSPC
+  - TAB
+  - Q
+  - W
+  - {t: E, right: '€'}
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - LSFT
+  - {t: A, right: Ä}
+  - {t: S, right: ß}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
+  - {t: G, h: CODE}
+  - {t: H, h: FUNC}
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: RALT}
+  - {t: ;, h: GUI}
+  - ''''
+  - LSFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - HOME
+  - MUTE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSFT
+  - LCTL
+  - LGUI
+  - LALT
+  - L1
+  - ENT
+  - SPC
+  - L2
+  - DEL
+  - RALT
+  - RCTL
+  L1:
+  - {t: ▽, type: trans}
+  - {t: F1, left: F11}
+  - {t: F2, left: F12}
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '='
+  - RM TOGG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - '|'
+  - RM NEXT
+  - AGD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans} 
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RGHT
+  - \
+  - {t: ▽, type: trans}
+  - RM PREV
+  - {t: ▽, type: trans}
+  - QUT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PGDN
+  - PGUP
+  - END
+  - {t: ▽, type: trans}
+  - SC CAD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  L2:
+  - {t: ▽, type: trans}
+  - Alt+F1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+F6
+  - Ctl+PSLS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UML UE
+  - {t: ▽, type: trans}
+  - UML OE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UML AE
+  - GER SZ
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+  - {key_positions: [0, 0], key: "`", layers: [QWERTY] }
