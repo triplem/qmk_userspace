@@ -7,36 +7,27 @@ My keebs are
 * redox - by falbatech (https://falbatech.click/)
 * sofle-chco - by keebart (https://www.keebart.com/)
 
-## Keymap
-
-Making use of home-row modifier as explaind on https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/ and https://docs.qmk.fm/#/mod_tap.
-https://precondition.github.io/home-row-mods. Note, that the home-row mod is not working on "s" anymore, since this is now a Tap-Dance. 
-
-
-```
-qmk c2json -kb redox/rev1/base -km triplem ~/qmk_userspace/keyboards/redox/keymaps/triplem/keymap.c | keymap parse -c 10 -q - -l QWERTY FUNCTION CODING >redox_keymap.yaml
-keymap draw redox_keymap.yaml >redox_keymap.ortho.svg
-```
-
-https://github.com/rafaelromao/keyboards
-https://getreuer.info/posts/keyboards/non-english/index.html#us-international-layout
-
 ## Build Instructions
 
 * on linux it is quite easy, just install qmk and compile and flash the firmware
-* on windows, there is an msys package, which is quite slow
-* you can install qmk inside an ubuntu-24.04 (20.04 has an old python version) and compile the firmware, to flash it, use the qmk-toolbox (https://qmk.fm/toolbox)
+* on windows install qmk inside an ubuntu-24.04 wsl (20.04 has an old python version) and compile the firmware, to flash it, use the qmk-toolbox (https://qmk.fm/toolbox)
 * wsl -d Ubuntu-24.04
 
 ```
 > qmk compile -kb <KEEB> -km triplem
 ```
 
+Detailed explanation on how to build and flash the specific keyboards can be found in their corresponding keyboards-folder.
+
 ## Keymaps
 
 The keymaps are generated using keymap-drawer on https://keymap-drawer.streamlit.app/.
 
 The base-layout is US Intl., since (https://eurkey.steffen.bruentjen.eu/) is not nativly available in Win and not installable on non-admin machines, furthermore it does not work cleanly in WSL. Since I do not like Deadkeys, the layout is adopted to be able to use Umlauts as well as quotes without deadkeys, even on US Intl. ;-)
+
+Making use of home-row modifier as explained on https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/ and https://docs.qmk.fm/#/mod_tap.
+
+https://precondition.github.io/home-row-mods. Note, that the home-row mod is not working on "s" anymore, since this is now a Tap-Dance. 
 
 ### Keymap Explanations
 
@@ -54,7 +45,8 @@ The base-layout is US Intl., since (https://eurkey.steffen.bruentjen.eu/) is not
 The layout file and all keyboard specific configurations can be found in keyboards/sofle_choc.
 
 ![Alt text](Sofle Choc Keymap)
-<img src="https://raw.github.com/triplem/qmk_userspace/keyboards/sofle_choc/keymaps/sofle-choc-keymap.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/sofle_choc/sofle-choc-keymap.svg">
+
 
 # Template
 
