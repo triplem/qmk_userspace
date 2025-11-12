@@ -14,3 +14,8 @@ flashing will start
 after finished flashing on both sided, unplug usb again, reconnect the two halfs
 after replugging, everything should work as expected.
 
+## Keymap
+
+The keymap is generated using https://keymap-drawer.streamlit.app/ with the file redox-keymap.yaml.
+
+<img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/redox/redox-keymap.svg">

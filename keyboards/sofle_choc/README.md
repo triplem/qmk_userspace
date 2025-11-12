@@ -24,6 +24,6 @@ While replugging the corresponding side, press ESC (for the left side) or BKSP (
 
 ## Keymap
 
-The keymap is generated using https://keymap-drawer.streamlit.app/ with the file sofle-choc_keyboard-layout.yaml.
+The keymap is generated using https://keymap-drawer.streamlit.app/ with the file sofle-choc-keymap.yaml.
 
 <img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/sofle_choc/sofle-choc-keymap.svg">

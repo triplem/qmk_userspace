@@ -46,6 +46,13 @@ The layout file and all keyboard specific configurations can be found in keyboar
 
 <img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/sofle_choc/sofle-choc-keymap.svg">
 
+### redox
+
+The layout file and all keyboard specific configurations can be found in keyboards/redox.
+
+<img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/redox/redox-keymap.svg">
+
+
 # Template
 
 This is a template repository which allows for an external set of QMK keymaps to be defined and compiled. This is useful for users who want to maintain their own keymaps without having to fork the main QMK repository.
