@@ -37,16 +37,14 @@ https://precondition.github.io/home-row-mods. Note, that the home-row mod is not
 * bottom: hold
 
 * special keys:
-** AGD - Org Agenda
-** QUT - Emacs quit
+  * AGD - Org Agenda
+  * QUT - Emacs quit
 
 ### sofle-choc
 
 The layout file and all keyboard specific configurations can be found in keyboards/sofle_choc.
 
-![Alt text](Sofle Choc Keymap)
 <img src="https://raw.githubusercontent.com/triplem/qmk_userspace/refs/heads/main/keyboards/sofle_choc/sofle-choc-keymap.svg">
-
 
 # Template
 
