@@ -4,7 +4,7 @@ The Sofle Choc is 6×4+5 keys column-staggered split keyboard. Based on Lily58, 
 
 QMK details can be found in: https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle_choc
 
-I bought mine at keebart (https://keIebart.com/).
+I bought mine at keebart (https://keebart.com/).
 
 For the sofle_choc the rgb_matrix is enabled: https://docs.qmk.fm/#/feature_rgb_matrix.
 
@@ -22,4 +22,10 @@ The firmware needs to get flashed twice, once for each side. Unplug the Keyboard
 
 While replugging the corresponding side, press ESC (for the left side) or BKSP (for the right side). The Flashing should start.
 
-My personal layout for this keyboard is documented on http://www.keyboard-layout-editor.com/#/gists/14e2a9d6e6b7c1152ef19ea2cc0a8783.
+## Keymap
+
+The keymap is generated using https://keymap-drawer.streamlit.app/ with the file sofle-choc_keyboard-layout.yaml.
+
+![Alt text](Sofle Choc Keymap)
+<img src="https://raw.github.com/triplem/qmk_userspace/keyboards/sofle_choc/keymaps/sofle-choc-keymap.svg?sanitize=true">
+

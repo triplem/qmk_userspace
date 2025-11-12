@@ -34,7 +34,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            |      |      |      |      |/      /         \      \ |      |      |      |      |
      *            `----------------------------------'           '------''---------------------------'
      */
-    [_QWERTY] = LAYOUT(MC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_TAB, KC_Q, KC_W, TD(TD_EU_EUR), KC_R, KC_T, KC_Y, TD(TD_UML_UE), KC_I, TD(TD_UML_OE), KC_P, KC_MINUS, KC_LSFT, TD(TD_UML_AE), TD(TD_GER_SZ), MOD_D, MOD_F, LT_G, LT_H, MOD_J, MOD_K, MOD_L, MOD_SCLN, MC_QUOT, KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_HOME, KC_MUTE, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_LCTL, KC_LGUI, KC_LALT, MO(1), KC_ENT, KC_SPC, MO(2), KC_DEL, KC_RALT, KC_RCTL),
+    [_QWERTY] = LAYOUT(MC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
+                       KC_TAB, KC_Q, KC_W, TD(TD_EU_EUR), KC_R, TD(TD_T_RBRC), TD(TD_Y_LBRC), TD(TD_UML_UE), KC_I, TD(TD_UML_OE), KC_P, KC_MINUS,
+                       KC_LSFT, TD(TD_UML_AE), TD(TD_GER_SZ), MOD_D, MOD_F, LT_G, LT_H, MOD_J, MOD_K, MOD_L, MOD_SCLN, MC_QUOT,
+                       KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_HOME, KC_MUTE, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
+                       KC_LCTL, KC_LGUI, KC_LALT, MO(1), KC_ENT, KC_SPC, MO(2), KC_DEL, KC_RALT, KC_RCTL),
 
     /*
      * FUNCTION
@@ -51,7 +55,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            |      |      |      |      |/       /         \      \ |      |      |      |      |
      *            `----------------------------------'           '------''---------------------------'
      */
-    [_FUNCTION] = LAYOUT(_______, TD(TD_F1_F11), TD(TD_F2_F12), KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQUAL, RM_TOGG, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______, _______, KC_F11, KC_F12, KC_PIPE, RM_NEXT, MC_AGD, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSLS, _______, RM_PREV, _______, MC_QUT, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, SC_CAD, _______, _______, _______, _______, _______, _______, _______, KC_INS, _______, _______),
+    [_FUNCTION] = LAYOUT(_______, TD(TD_F1_F11), TD(TD_F2_F12), KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQUAL,
+                         RM_TOGG, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______, _______, KC_F11, KC_F12, KC_PIPE,
+                         RM_NEXT, MC_AGD, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSLS, _______,
+                         RM_PREV, _______, MC_QUT, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, SC_CAD,
+                         _______, _______, _______, _______, _______, _______, _______, KC_INS, _______, _______),
 
     /*
      * CODING - mainly IntelliJ stuff
@@ -68,7 +76,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            |      |      |      |      |/       /         \      \ |      |      |      |      |
      *            `----------------------------------'           '------''---------------------------'
      */
-    [_CODING] = LAYOUT(_______, A(KC_F1), _______, _______, _______, _______, C(KC_F6), C(KC_PSLS), _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, UML_UE, _______, UML_OE, _______, _______, _______, UML_AE, GER_SZ, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, C(KC_X), C(KC_C), C(KC_V), _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______)};
+    [_CODING] = LAYOUT(_______, A(KC_F1), _______, _______, _______, _______, C(KC_F6), C(KC_PSLS), _______, _______, _______, _______,
+                       _______, _______, _______, _______, _______, _______, _______, UML_UE, _______, UML_OE, _______, _______,
+                       _______,  UML_AE, GER_SZ, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+                       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______)};
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {

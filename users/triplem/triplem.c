@@ -1,6 +1,18 @@
 #include "triplem.h"
 
 //Tap Dance Definitions
+void uml_tap_dance(tap_dance_state_t *state, void *user_data, uint16_t keycode_first, uint16_t keycode_uml) {
+     if (state->count == 1) {
+        tap_code(keycode_first);
+    } else if (state->count == 2) {
+        tap_code(keycode_first);
+    } else if (state->count == 3) {
+        tap_code16(keycode_uml);
+    } else {
+        reset_tap_dance(state);
+    }
+};
+
 void auml_tap_dance(tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         tap_code(KC_A);
@@ -63,13 +75,15 @@ void eur_tap_dance(tap_dance_state_t *state, void *user_data) {
 };
 
 tap_dance_action_t tap_dance_actions[] = {
-  [TD_F1_F11]  = ACTION_TAP_DANCE_DOUBLE(KC_F1, KC_F11),
-  [TD_F2_F12]  = ACTION_TAP_DANCE_DOUBLE(KC_F2, KC_F12),
-  [TD_UML_AE]  = ACTION_TAP_DANCE_FN(auml_tap_dance),
-  [TD_UML_OE]  = ACTION_TAP_DANCE_FN(ouml_tap_dance),
-  [TD_UML_UE]  = ACTION_TAP_DANCE_FN(uuml_tap_dance),
-  [TD_GER_SZ]  = ACTION_TAP_DANCE_FN(ger_sz_tap_dance),
-  [TD_EU_EUR]  = ACTION_TAP_DANCE_FN(eur_tap_dance)
+  [TD_F1_F11] = ACTION_TAP_DANCE_DOUBLE(KC_F1, KC_F11),
+  [TD_F2_F12] = ACTION_TAP_DANCE_DOUBLE(KC_F2, KC_F12),
+  [TD_UML_AE] = ACTION_TAP_DANCE_FN(auml_tap_dance),
+  [TD_UML_OE] = ACTION_TAP_DANCE_FN(ouml_tap_dance),
+  [TD_UML_UE] = ACTION_TAP_DANCE_FN(uuml_tap_dance),
+  [TD_GER_SZ] = ACTION_TAP_DANCE_FN(ger_sz_tap_dance),
+  [TD_EU_EUR] = ACTION_TAP_DANCE_FN(eur_tap_dance),
+  [TD_T_RBRC] = ACTION_TAP_DANCE_DOUBLE(KC_T, KC_RBRC),
+  [TD_Y_LBRC] = ACTION_TAP_DANCE_DOUBLE(KC_Y, KC_LBRC)
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -83,9 +97,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case MC_GRV:
        if (record->event.pressed) {
             if (((get_mods() & MOD_MASK_SHIFT) != 0)) {
-                register_code(KC_LSFT);
+                register_code(KC_LCTL);
                 tap_code(KC_GRV);
-                unregister_code(KC_LSFT);
+                unregister_code(KC_LCTL);
             } else if (((get_mods() & MOD_MASK_GUI) != 0)) {
                 SEND_STRING(SS_TAP(X_GRV) SS_TAP(X_SPC));
             }

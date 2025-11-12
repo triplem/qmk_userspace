@@ -29,7 +29,18 @@
 enum layers { _QWERTY, _FUNCTION, _CODING };
 
 // Tap Dance Declarations
-enum { TD_F1_F11 = 0, TD_F2_F12, TD_ESC_GRV, TD_UML_AE, TD_UML_OE, TD_UML_UE, TD_GER_SZ, TD_EU_EUR };
+enum {
+  TD_F1_F11 = 0,
+  TD_F2_F12,
+  TD_ESC_GRV,
+  TD_UML_AE,
+  TD_UML_OE,
+  TD_UML_UE,
+  TD_GER_SZ,
+  TD_EU_EUR,
+  TD_T_RBRC,
+  TD_Y_LBRC
+};
 
 // Custom Keycodes to avoid dead-keys
 // MC_QUOT = " to avoid dead keys
@@ -37,4 +48,9 @@ enum { TD_F1_F11 = 0, TD_F2_F12, TD_ESC_GRV, TD_UML_AE, TD_UML_OE, TD_UML_UE, TD
 // MC_GRV + esc = `
 // MC_AGD = Macro for Emacs org-agenda (Space o A T)
 // MC_QUT = Macro to quit doom emacs
-enum custom_keycodes { MC_QUOT = SAFE_RANGE, MC_GRV, MC_AGD, MC_QUT };
+enum custom_keycodes {
+  MC_QUOT = SAFE_RANGE,
+  MC_GRV,
+  MC_AGD,
+  MC_QUT
+};
