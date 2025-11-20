@@ -8,15 +8,15 @@ tap_dance_action_t tap_dance_actions[] = {
   [TD_UML_UE] = ACTION_TAP_DANCE_DOUBLE(KC_U, UML_UE),
   [TD_GER_SZ] = ACTION_TAP_DANCE_DOUBLE(KC_S, GER_SZ),
   [TD_EU_EUR] = ACTION_TAP_DANCE_DOUBLE(KC_E, EU_EUR),
-  [TD_T_RBRC] = ACTION_TAP_DANCE_DOUBLE(KC_T, KC_RBRC),
-  [TD_Y_LBRC] = ACTION_TAP_DANCE_DOUBLE(KC_Y, KC_LBRC)
+  [TD_T_LBRC] = ACTION_TAP_DANCE_DOUBLE(KC_T, KC_LBRC),
+  [TD_Y_RBRC] = ACTION_TAP_DANCE_DOUBLE(KC_Y, KC_RBRC)
 };
 
 // Shift + esc = ~
-const key_override_t tilde_esc_override = ko_make_basic(MOD_MASK_SHIFT, KC_ESC, S(KC_GRV));
+const key_override_t tilde_esc_override = ko_make_basic(MOD_MASK_SHIFT, KC_ESC, MC_TILD);
 
 // GUI + esc = `
-const key_override_t grave_esc_override = ko_make_basic(MOD_MASK_GUI, KC_ESC, KC_GRV);
+const key_override_t grave_esc_override = ko_make_basic(MOD_MASK_GUI, KC_ESC, MC_GRV);
 
 const key_override_t *key_overrides[] = {
 	&tilde_esc_override,
@@ -41,6 +41,23 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
        if (record->event.pressed) {
         SEND_STRING(SS_TAP(X_SPC) "w" SS_LCTL("q"));
       }
+      break;
+
+    case MC_TILD:
+        if (record->event.pressed) {
+            register_code(KC_LSFT);
+            tap_code(KC_GRV);
+            tap_code(KC_SPC);
+            unregister_code(KC_LSFT);
+        }
+        break;
+
+    case MC_GRV:
+        if (record->event.pressed) {
+            tap_code(KC_GRV);
+            tap_code(KC_SPC);
+        }
+        break;
     }
 
     return true;

@@ -38,8 +38,8 @@ enum {
   TD_UML_UE,
   TD_GER_SZ,
   TD_EU_EUR,
-  TD_T_RBRC,
-  TD_Y_LBRC
+  TD_T_LBRC,
+  TD_Y_RBRC
 };
 
 // Custom Keycodes to avoid dead-keys
@@ -48,7 +48,9 @@ enum {
 enum custom_keycodes {
   MC_QUOT = SAFE_RANGE,
   MC_AGD,
-  MC_QUT
+  MC_QUT,
+  MC_TILD,
+  MC_GRV
 };
 
 // overrides
