@@ -12,17 +12,6 @@ tap_dance_action_t tap_dance_actions[] = {
   [TD_Y_RBRC] = ACTION_TAP_DANCE_DOUBLE(KC_Y, KC_RBRC)
 };
 
-// Shift + esc = ~
-const key_override_t tilde_esc_override = ko_make_basic(MOD_MASK_SHIFT, KC_ESC, MC_TILD);
-
-// GUI + esc = `
-const key_override_t grave_esc_override = ko_make_basic(MOD_MASK_GUI, KC_ESC, MC_GRV);
-
-const key_override_t *key_overrides[] = {
-	&tilde_esc_override,
-	&grave_esc_override
-};
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case MC_QUOT:
@@ -43,16 +32,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
 
-    case MC_TILD:
+    case MC_TLD_ESC:
         if (record->event.pressed) {
-            register_code(KC_LSFT);
-            tap_code(KC_GRV);
-            tap_code(KC_SPC);
-            unregister_code(KC_LSFT);
+            uint8_t temp_mods = get_mods();
+
+
+            // Shift + esc = ~
+            if ((temp_mods & MOD_MASK_SHIFT) != 0) {
+                clear_mods();
+                register_code(KC_LSFT);
+                tap_code(KC_GRV);
+                tap_code(KC_SPC);
+                unregister_code(KC_LSFT);
+                set_mods(temp_mods);
+                return false;
+            // ESC
+            } else {
+                tap_code(KC_ESC);
+            }
         }
         break;
 
-    case MC_GRV:
+    case MC_GRV_ESC:
         if (record->event.pressed) {
             tap_code(KC_GRV);
             tap_code(KC_SPC);

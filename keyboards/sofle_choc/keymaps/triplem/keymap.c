@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * QWERTY
      * ,-----------------------------------------.                   ,-----------------------------------------.
-     * | ESC/'|   1  |   2  |   3  |   4  |   5  |                   |   6  |   7  |   8  |   9  |   0  | Bspc |
+     * | ESC/~|   1  |   2  |   3  |   4  |   5  |                   |   6  |   7  |   8  |   9  |   0  | Bspc |
      * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
      * | Tab  |   Q  |   W  |   E  |   R  |   T  |                   |   Y  |   U  |   I  |   O  |   P  |  -   |
      * |------+------+------+------+------+------|                   |------+------+------+------+------+------|
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            |      |      |      |      |/      /         \      \ |      |      |      |      |
      *            `----------------------------------'           '------''---------------------------'
      */
-    [_QWERTY] = LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
+    [_QWERTY] = LAYOUT(MC_TLD_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
                        KC_TAB, KC_Q, KC_W, TD(TD_EU_EUR), KC_R, TD(TD_T_LBRC), TD(TD_Y_RBRC), TD(TD_UML_UE), KC_I, TD(TD_UML_OE), KC_P, KC_MINUS,
                        KC_LSFT, TD(TD_UML_AE), TD(TD_GER_SZ), MOD_D, MOD_F, LT_G, LT_H, MOD_J, MOD_K, MOD_L, MOD_SCLN, MC_QUOT,
                        KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_HOME, KC_MUTE, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * FUNCTION
      * ,-----------------------------------------.                    ,-----------------------------------------.
-     * | ---  |F1/F11|F2/F12|  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  |  =   |
+     * | `    |F1/F11|F2/F12|  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  |  =   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
      * |RGB T | ---  | ---  | ---  | ---  |   [  |                    |   ]  | ---  | ---  | F11  | F12  |  |   |
      * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            |      |      |      |      |/       /         \      \ |      |      |      |      |
      *            `----------------------------------'           '------''---------------------------'
      */
-    [_FUNCTION] = LAYOUT(_______, TD(TD_F1_F11), TD(TD_F2_F12), KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQUAL,
+    [_FUNCTION] = LAYOUT(MC_GRV_ESC, TD(TD_F1_F11), TD(TD_F2_F12), KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQUAL,
                          RM_TOGG, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______, _______, KC_F11, KC_F12, KC_PIPE,
                          RM_NEXT, MC_AGD, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BSLS, _______,
                          RM_PREV, _______, MC_QUT, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, SC_CAD,
