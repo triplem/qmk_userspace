@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: redox/rev1/base, layout_name: LAYOUT}
 layers:
   QWERTY:
-  - {t: ESC, s: '`'}
+  - {t: ESC, s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -16,28 +16,28 @@ layers:
   - TAB
   - Q
   - W
-  - {t: E, right: '€'}
+  - {t: E}
   - R
-  - {t: T, left: '['}
+  - {t: T}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Y, left: ']'}
-  - {t: U, right: 'Ü'}
+  - {t: Y}
+  - {t: U}
   - I
-  - {t: O, right: 'Ö'}
+  - {t: O}
   - P
   - {t: '-', s: '_'}
   - TAB
-  - {t: A, right: Ä}
-  - {t: S, right: ß}
-  - {t: D, h: Ctrl}
-  - {t: F, h: Shift}
-  - {t: G, h: CODE}
+  - {t: A, h: GUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTL}
+  - {t: F, h: LSHFT}
+  - {t: G, h: SYMB}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: H, h: FUNC}
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
+  - {t: H, h: SYMB}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTL}
   - {t: L, h: RALT}
   - {t: ;, h: GUI}
   - {t: '''', s: '"'}
@@ -164,14 +164,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UML UE
-  - {t: ▽, type: trans}
-  - UML OE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UML AE
-  - GER SZ
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -213,5 +213,75 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-  - {tk: [LCTL, ESC], key: "~", align: left, layers: [QWERTY], offset: 0.3, slide: 1, arc_scale: 1.0}
+  SYMB:
+  - {t: '`', s: '~'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: "€"}
+  - {t: ▽, type: trans}
+  - {t: "["}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: "]"}
+  - {t: "Ü" }
+  - {t: ▽, type: trans}
+  - {t: "Ö"}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: "Ä"}
+  - {t: "ß"}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+

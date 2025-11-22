@@ -7,7 +7,7 @@ tap_dance_action_t tap_dance_actions[] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-    case MC_QUOT:
+    case MC_QUOT: // ' on US Intl leyout to avoid deadkeys
        if (record->event.pressed) {
            SEND_STRING(SS_TAP(X_QUOT) SS_TAP(X_SPC));
        }
@@ -25,10 +25,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
 
-    case MC_TLD_ESC:
+    case MC_TLD_ESC: // Shift + esc = ~, ESC otherwise
         if (record->event.pressed) {
             uint8_t temp_mods = get_mods();
-
 
             // Shift + esc = ~
             if ((temp_mods & MOD_MASK_SHIFT) != 0) {
@@ -46,7 +45,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
 
-    case MC_GRV_ESC:
+    case MC_GRV_ESC: // ` on US Intl layout to avoid deadkeys
         if (record->event.pressed) {
             tap_code(KC_GRV);
             tap_code(KC_SPC);
