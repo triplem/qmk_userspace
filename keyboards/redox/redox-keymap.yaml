@@ -160,15 +160,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: "€"}
   - {t: ▽, type: trans}
-  - {t: "["}
+  - {t: '[', s: '{'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: "]"}
+  - {t: ']', s: '}'}
   - {t: "Ü" }
   - {t: ▽, type: trans}
   - {t: "Ö"}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - {t: "Ä"}
   - {t: "ß"}
@@ -181,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
