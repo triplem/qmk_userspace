@@ -26,7 +26,7 @@
 #define SC_CAD LALT(LCTL(KC_DEL)) // alt-ctrl-del - reset
 
 // Layers
-enum layers { _QWERTY, _FUNCTION, _CODING, _SYMB };
+enum layers { _QWERTY, _FUNCTION, _SYMB };
 
 // Tap Dance Declarations
 enum {
