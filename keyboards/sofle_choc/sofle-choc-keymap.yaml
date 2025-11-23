@@ -30,8 +30,8 @@ layers:
   - {t: S, right: ß}
   - {t: D, h: Ctrl}
   - {t: F, h: Shift}
-  - {t: G, h: CODE}
-  - {t: H, h: FUNC}
+  - {t: G, h: SYMB}
+  - {t: H, h: SYMB}
   - {t: J, h: Shift}
   - {t: K, h: Ctrl}
   - {t: L, h: RALT}
@@ -140,8 +140,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: '€'}
   - {t: ▽, type: trans}
-  - {t: '['}
-  - {t: ']'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: 'Ü'}
   - {t: ▽, type: trans}
   - {t: 'Ö'}
